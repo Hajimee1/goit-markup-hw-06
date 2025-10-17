@@ -128,234 +128,13 @@ footer {
   color: #ffffff;
   padding: 188px 0;
 } /*                                                                 */
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* yarı saydam siyah */
-  z-index: 1;
-  display: none;
-}
-.modal {
-  width: 408px;
-  height: 584px;
-  background-color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  display: none;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  gap: 24px;
-}
-form button {
-  flex: 0 0 auto;
-  width: 169px;
-  align-self: center;
-}
-label:last-child {
-  display: flex;
-  gap: 8px;
-}
-
-.inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.on {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-label {
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  text-align: left;
-  line-height: 14px;
-}
-form a {
-  color: #4d5ae5;
-  line-height: 16px;
-  letter-spacing: 0.04em;
-}
-form .input {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.form-vector {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  border-radius: 20px;
-  margin-left: auto;
-}
-.form-vector:hover {
-  background-color: #404bbf;
-  fill: #fff;
-}
-.input-wrap {
-  position: relative;
-}
-.input-wrap svg {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-.check-hack {
-  display: inline-block;
-  width: 453px;
-  float: right;
-}
-.foot-sub {
-  float: right;
-}
-.check-wrap {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-}
-.check-wrap,
-#check1 {
-  width: 16px;
-  height: 16px;
-}
-.check input[type="checkbox"] {
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  position: relative;
-  cursor: pointer;
-}
-
-/* input */
-.input-btn-wrap input[type="email"] {
-  display: inline-block;
-  vertical-align: middle; /* dikey ortalama */
-  padding: 8px 10px;
-  width: 264px;
-  height: 40px;
-  border: 1px solid #cfcfcf;
-  border-radius: 6px;
-  /* input ile button arası boşluk */
-  font-size: 16px; /* font-size sıfırlamayı düzeltmek için */
-}
-
-/* label içindeki buton */
-.foot-sub {
-  display: inline-block;
-  text-align: center;
-}
-
-/* buton */
-.subscribe-btn {
-  display: inline-block;
-  width: 165px;
-  padding: 8px 24px;
-  height: 40px;
-  background-color: #4d5ae5;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  position: relative;
-  font-size: 16px;
-}
-
-.subscribe-btn .btn-text,
-.subscribe-btn .btn-icon {
-  display: inline-block;
-  vertical-align: middle;
-}
-.subscribe-btn .btn-text {
-  float: left;
-  width: 77px;
-}
-.subscribe-btn .btn-icon {
-  position: absolute;
-  width: 24px;
-  height: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  float: right;
-}
-
-/*button:active .modal-backdrop {
-  display: block;
-}
-button:active .modal {
-  display: block;
-}*/
-.check svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  /*display: none; /* default gizli */
-}
-
-.check input[type="checkbox"]:checked + svg {
-  display: block; /* işaretlendiğinde göster */
-}
-input[type="checkbox"]:checked {
-  background-color: #2a7ae4;
-}
-
-.input-wrap input {
-  width: 100%;
-  height: 40px;
-  padding-left: 30px; /* ikon kadar boşluk */
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  outline: none;
-  font-size: 14px;
-}
-
-.input-wrap input:focus,
-.input-wrap input:hover,
-.input-wrap input:active {
-  border-color: #2a7ae4;
-}
-.input-wrap:has(input:focus) svg,
-.input-wrap:has(input:hover) svg,
-.input-wrap:has(input:active) svg {
-  fill: #2a7ae4;
-}
-
-.input textarea {
-  height: 120px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  outline: none;
-  resize: none;
-  font-size: 14px;
-  padding: 15px;
-}
-*::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-}
-
 /*                                                                 */
 button {
   background-color: #4d5ae5;
   padding: 16px 32px;
   position: relative;
   border: none;
+  color: #ffffff;
   text-align: center;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -382,7 +161,7 @@ button {
   border: 1px solid #8e8f99;
   height: 112px;
 }
-svg:not(.input svg) {
+svg:not(form svg) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -475,9 +254,7 @@ button {
   padding-bottom: 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.service-button:hover {
-  background-color: #404bbf;
-}
+
 #our-portfolio li:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -518,12 +295,265 @@ nav .links.active::after {
 }
 footer h3 {
   font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
 }
-.input-btn-wrap input {
-  background-color: transparent;
+footer form {
+  display: flex;
+  float: right;
+  width: 453px;
 }
-.input-btn-wrap input::placeholder {
+footer label {
+  width: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* ekranın genişliği */
+  height: 100vh; /* ekranın yüksekliği */
+  background-color: rgba(0, 0, 0, 0.5); /* karartma efekti */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999; /* her şeyin üstünde */
+}
+
+.modal {
+  position: absolute; /* artık absolute olmasına gerek yok */
+  background-color: white;
+  max-width: 408px;
+  width: 100%;
+  padding: 24px;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-form {
+  display: block;
   font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+*/ .modal h3 {
+  text-align: center;
+}
+.check {
+  display: inline-block; /* Label satır içi gibi davranır */
+  cursor: pointer; /* Tıklanabilir his */
+  height: 16px;
+}
+
+.check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  display: inline-block; /* Yan yana görünmesini sağlar */
+  vertical-align: middle; /* Metinle dikey ortalar */
+  margin-right: 4px; /* Checkbox ile metin arasında küçük boşluk */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check a.modal-policy {
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+.modal-wrapper {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 20px;
+}
+.modal-wrapper:hover {
+  background-color: #404bbf;
+}
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+.input div:not(footer div) {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: flex;
+  padding: 9px 0 9px 16px;
+  border-radius: 4px;
+  gap: 8px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+.input div:focus-within {
+  border-color: #4d5ae5;
+}
+.input div:focus-within svg {
+  fill: #4d5ae5;
+}
+.modal button {
+  width: 169px;
+  margin: auto;
+}
+
+.main-form {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.main-form h3 {
+  text-align: center;
+}
+.modal {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.check-wrap {
+  display: inline-block;
+}
+
+.check {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.check-wrap {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-wrap input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+.check-wrap svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.check-wrap input[type="checkbox"]:checked {
+  background-color: #404bbf;
+}
+
+.check a.modal-policy {
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+.modal-wrapper:hover {
+  background-color: #4d5ae5;
+  fill: #fff;
+  border-radius: 20px;
+}
+.modal-backdrop,
+.modal {
+  display: none;
+}
+.is-open {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.input-row {
+  display: flex;
+  padding-left: 0;
+  gap: 24px;
+}
+.input-row input {
+  flex: 1;
+  padding: 8px 16px;
+  padding-right: 0;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+footer .subscribe-btn {
+  display: inline-flex; /* yan yana ve ortalanmış */
+  align-items: center; /* dikey ortalama */
+  gap: 16px; /* metin ile svg arası boşluk */
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-btn .btn-text {
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.subscribe-btn .btn-icon svg {
+  display: block; /* flex içinde svg düzgün hizalanır */
+  width: 24px; /* svg boyutunu ayarlayabilirsin */
+  height: 24px;
+}
+textarea {
+  height: 120px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  padding-top: 8px;
+  padding-left: 16px;
+  outline: none; /* varsayılan mavi kenarlığı kaldırır */
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea:focus {
+  box-shadow: 0 0 0 2px rgba(77, 90, 229, 0.3); /* yumuşak vurgu efekti */
+}
+textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+footer input {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer input::placeholder {
+  color: #fff;
+}
+textarea:focus,
+footer input:focus {
+  border-color: #4d5ae5; /* istediğin mavi ton */
+  outline: none; /* tarayıcı varsayılan mavi/siyah çerçeveyi kapatır */
+  appearance: none; /* Safari / iOS gibi yerlerdeki stilleri sıfırlar */
+}
+button:hover {
+  background-color: #404bbf;
 }
