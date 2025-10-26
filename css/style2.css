@@ -1,0 +1,120 @@
+body,
+h1,
+h2,
+h3,
+p,
+a,
+li,
+ul,
+button,
+span {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+  font-style: normal;
+}
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.container {
+  max-width: 320px;
+  box-sizing: border-box;
+}
+.svg-wrap:not(#approach .svg-wrap) {
+  width: 24px;
+  height: 24px;
+}
+.S-media .svg-wrap {
+  width: 40px;
+  height: 40px;
+}
+.svg-wrap {
+  position: relative;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+.card-content {
+  flex-direction: column;
+  gap: 8px;
+}
+.flexible {
+  display: flex;
+  flex-wrap: wrap;
+}
+#cards {
+  gap: 72px;
+  justify-content: center;
+}
+
+#hero {
+  padding: 72px 0;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/******************************************************************************DEĞİŞKEN **********************************************************************/
+.card-content:not(#approach .card-content) {
+  padding: 32px 16px;
+}
+#portfolio .cards {
+  gap: 48px;
+}
+#hero {
+  padding: 72px 0;
+}
+section:not(#hero) {
+  padding: 96px 16px;
+}
+button {
+  padding: 16px 32px;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+#menu,          /******************************************************************************DEĞİŞKEN **********************************************************************/
+#modal, /******************************************************************************DEĞİŞKEN **********************************************************************/
+#modal-backdrop {
+  /******************************************************************************DEĞİŞKEN **********************************************************************/
+  display: none; /******************************************************************************DEĞİŞKEN **********************************************************************/
+} /******************************************************************************DEĞİŞKEN **********************************************************************/
+.team-img {
+  /******************************************************************************DEĞİŞKEN **********************************************************************/
+  width: 264px;
+}
+.porfolio-img {
+  /******************************************************************************DEĞİŞKEN **********************************************************************/
+  width: 288px;
+}
+.title-margin {
+  margin-bottom: 72px;
+}
+#approach .svg-wrap {
+  display: none;
+}
