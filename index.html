@@ -23,7 +23,7 @@
     <div class="container">
       <div id="modal-backdrop"></div>
       <div id="modal">
-        <div class="svg-wrap">
+        <div class="svg-wrap close-icon">
           <svg width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -75,49 +75,54 @@
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg></div
           ></label>
-          <button></button>
+          <button>Send</button>
         </form>
       </div>
       <header>
-        <a class="logo">WEB<span>STUDIO</span></a>
-        <div id="menu">
-          <div class="svg-wrap">
+        <a href="" class="logo"><span class="logo-span">WEB</span>STUDIO</a>
+        <div class="menu">
+          <div class="svg-wrap close-icon">
             <svg width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </div>
-          <nav>
-            <ul>
-              <li><a class="title-color">Studio</a></li>
-              <li><a class="title-color">Portfolio</a></li>
-              <li><a class="title-color">Contacts</a></li>
-            </ul>
-          </nav>
-          <address>
-            <ul>
-              <li><a class="navy">info@devstudio.com</a></li>
-              <li><a class="navy">+11 (000) 111-11-11</a></li>
-            </ul>
-          </address>
-          <ul id="S-media" class="flexible">
-            <li>
-              <svg>
-                <use></use>
+          <div class="is-open">
+            <div class="menu2">
+              <nav class="list-nav">
+                <ul class="flexible">
+                  <li><a class="m-size-title">Studio</a></li>
+                  <li><a class="m-size-title">Portfolio</a></li>
+                  <li><a class="m-size-title">Contacts</a></li>
+                </ul>
+              </nav>
+              <address class="list-address">
+                <ul class="flexible">
+                  <li><a class="address-info">info@devstudio.com</a></li>
+                  <li><a class="address-info">+11 (000) 111-11-11</a></li>
+                </ul>
+              </address>
+            </div>
+          </div>
+
+          <ul class="S-media flexible">
+            <li class="svg-wrap">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </li>
-            <li>
-              <svg>
-                <use></use>
+            <li class="svg-wrap">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </li>
-            <li>
-              <svg>
-                <use></use>
+            <li class="svg-wrap">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </li>
-            <li>
-              <svg>
-                <use></use>
+            <li class="svg-wrap">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
@@ -129,12 +134,12 @@
         </div>
       </header>
       <main>
-        <section id="hero">
-          <h1 class="title-margin">Effective Solutions for Your Business</h1>
+        <section id="hero" class="dark-bg flexible section">
+          <h1 class="title-margin hero-title">Effective Solutions for Your Business</h1>
           <button>Order Service</button>
         </section>
-        <section id="approach">
-          <ul id="cards" class="flexible">
+        <section id="approach" class="flexible section padding-96-16">
+          <ul class="flexible cards">
             <li class="card">
               <div class="svg-wrap">
                 <svg width="64" height="64">
@@ -142,8 +147,10 @@
                 </svg>
               </div>
               <div class="card-content flexible">
-                <h3 class="title-color card-title">Strategy</h3>
-                <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
+                <h3 class="title-color card-title m-size-title">Strategy</h3>
+                <p class="card-text">
+                  Our goal is to identify the business problem to walk away with the perfect and creative solution.
+                </p>
               </div>
             </li>
             <li class="card">
@@ -153,8 +160,8 @@
                 </svg>
               </div>
               <div class="card-content flexible">
-                <h3 class="title-color card-title">Punctuality</h3>
-                <p>
+                <h3 class="card-title m-size-title">Punctuality</h3>
+                <p class="card-text">
                   Bring the key message to the brand's audience for the best price within the shortest possible time.
                 </p>
               </div>
@@ -166,8 +173,8 @@
                 </svg>
               </div>
               <div class="card-content flexible">
-                <h3 class="title-color card-title">Diligence</h3>
-                <p>
+                <h3 class="card-title m-size-title">Diligence</h3>
+                <p class="card-text">
                   Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
                 </p>
               </div>
@@ -179,23 +186,23 @@
                 </svg>
               </div>
               <div class="card-content flexible">
-                <h3 class="title-color card-title">Technologies</h3>
-                <p>
+                <h3 class="card-title m-size-title">Technologies</h3>
+                <p class="card-text">
                   Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
                 </p>
               </div>
             </li>
           </ul>
         </section>
-        <section id="team">
-          <h2 class="title-color title-margin">Our Team</h2>
-          <ul id="cards" class="flexible">
+        <section id="team" class="flexible section padding-96-16">
+          <h2 class="m-size-title">Our Team</h2>
+          <ul class="flexible center-t cards">
             <li class="card">
               <div class="img-wrap team-img"><img src="./images/product_designer.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Mark Guerrero</h3>
-                <p>Project Designer</p>
-                <ul id="S-media" class="flexible">
+                <p class="card-text">Project Designer</p>
+                <ul class="S-media flexible">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -223,8 +230,8 @@
               <div class="img-wrap team-img"><img src="./images/frontend_dev.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Tom Ford</h3>
-                <p>Frontend Developer</p>
-                <ul id="S-media" class="flexible">
+                <p class="card-text">Frontend Developer</p>
+                <ul class="S-media flexible">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -252,8 +259,8 @@
               <div class="img-wrap team-img"><img src="./images/marketing.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Camila Garcia</h3>
-                <p>Marketing</p>
-                <ul id="S-media" class="flexible">
+                <p class="card-text">Marketing</p>
+                <ul class="S-media flexible">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -281,8 +288,8 @@
               <div class="img-wrap team-img"><img src="./images/ui_designer.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Daniel Wilson</h3>
-                <p>UI Designer</p>
-                <ul id="S-media" class="flexible">
+                <p class="card-text">UI Designer</p>
+                <ul class="S-media flexible">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -308,42 +315,42 @@
             </li>
           </ul>
         </section>
-        <section id="porfolio">
-          <h2>Our Portfolio</h2>
-          <ul id="cards" class="flexible">
+        <section id="portfolio" class="flexible section padding-96-16">
+          <h2 class="m-size-title">Our Portfolio</h2>
+          <ul class="flexible cards">
             <li class="card">
               <div class="img-wrap porfolio-img"><img src="./images/banking_app.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Banking App</h3>
-                <p>App</p>
+                <p class="card-text">App</p>
               </div>
             </li>
             <li class="card">
               <div class="img-wrap porfolio-img"><img src="./images/cashless_payment.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Cashless Payment</h3>
-                <p>Marketing</p>
+                <p class="card-text">Marketing</p>
               </div>
             </li>
             <li class="card">
               <div class="img-wrap porfolio-img"><img src="./images/meditation_app.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Meditation App</h3>
-                <p>App</p>
+                <p class="card-text">App</p>
               </div>
             </li>
             <li class="card">
               <div class="img-wrap porfolio-img"><img src="./images/taxi_service.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Taxi Service</h3>
-                <p>Marketing</p>
+                <p class="card-text">Marketing</p>
               </div>
             </li>
             <li class="card">
               <div class="img-wrap porfolio-img"><img src="./images/screen_illustrations.jpg" alt="" /></div>
               <div class="card-content flexible">
                 <h3 class="title-color card-title">Screen Illustraion</h3>
-                <p>Design</p>
+                <p class="card-text">Design</p>
               </div>
             </li>
             <li class="card">
@@ -356,45 +363,48 @@
           </ul>
         </section>
       </main>
-      <footer>
-        <div>
-          <a href="" class="logo">WEBSTUDIO</a>
-          <p></p>
+      <footer id="foot" class="dark-bg flexible padding-96-16">
+        <div id="foot-text" class="foot-gap">
+          <a href="" class="logo"><span class="logo-span">WEB</span>STUDIO</a>
+          <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
-        <div>
+        <div class="foot-gap">
           <h3>Social Media</h3>
-          <ul id="S-media" class="flexible">
+          <ul class="S-media flexible foot-gap">
             <li class="svg-wrap">
-              <svg width="" height="">
-                <use></use>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </li>
             <li class="svg-wrap">
-              <svg width="" height="">
-                <use></use>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </li>
             <li class="svg-wrap">
-              <svg width="" height="">
-                <use></use>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </li>
             <li class="svg-wrap">
-              <svg width="" height="">
-                <use></use>
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
         </div>
-        <div>
+        <div class="foot-gap">
           <h3>Subscibe</h3>
-          <div>
-            <input type="text" />
+          <div class="foot-gap">
+            <div class="inp">
+              <input type="text" placeholder="E-mail" />
+            </div>
+
             <button>
-              Send
+              <span>Subscribe</span>
               <div class="svg-wrap">
-                <svg>
-                  <use></use>
+                <svg width="24" height="20">
+                  <use href="./images/icons.svg#icon-send-icon"></use>
                 </svg>
               </div>
             </button>
