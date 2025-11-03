@@ -16,100 +16,101 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>HomeWork6</title>
   </head>
   <body>
     <div class="container">
-      <div class="modal-backdrop"></div>
-      <div class="modal">
-        <div class="svg-wrap close-icon">
+      <div id="modal-backdrop" class="modal-backdrop"></div>
+      <div id="modal" class="modal">
+        <div class="svg-wrap icon-close">
           <svg width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </div>
-        <form action="">
-          <h3 class="title-color">Leave your contacts and we will call you back</h3>
+        <form class="user-form" action="">
+          <h3 class="title-sm">Leave your contacts and we will call you back</h3>
           <div class="inputs">
-            <label for=""
+            <label for="" class="flex"
               >Name
-              <div class="wrap-div">
+              <div class="in-div">
                 <div class="svg-wrap">
                   <svg width="18" height="18">
                     <use href="./images/icons.svg#icon-person"></use>
                   </svg>
                 </div>
-                <input type="text" />
+                <input class="in-area" type="text" />
               </div>
             </label>
 
-            <label for=""
+            <label for="" class="flex"
               >Phone Number
-              <div class="wrap-div">
+              <div class="in-div">
                 <div class="svg-wrap">
                   <svg width="18" height="24">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </div>
-                <input type="text" />
+                <input class="in-area" type="text" />
               </div>
             </label>
-            <label for=""
+            <label for="" class="flex"
               >E-mail
-              <div class="wrap-div">
+              <div class="in-div">
                 <div class="svg-wrap">
                   <svg width="18" height="24">
                     <use href="./images/icons.svg#icon-mail"></use>
                   </svg>
                 </div>
-                <input type="text" />
+                <input class="in-area" type="text" />
               </div>
             </label>
-            <label for="">
+            <label for="" class="flex">
               Commend
-              <textarea name="" id=""></textarea>
+              <div class="in-div">
+                <textarea class="in-area t-area" name="" id=""></textarea>
+              </div>
             </label>
           </div>
 
-          <label for="" class="box-checkaa"
-            ><div class="svg-wrap-box-check">
-              <input type="checkbox" class="box-check" />
+          <label for="" class="flex policy">
+            <div class="svg-wrap checkbox">
+              <input class="in-area" type="checkbox" />
               <svg width="10" height="8">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
             </div>
-            I accept the terms and conditions of the Privacy Policy
+            <p>I accept the terms and conditions of the <span class="span-pp">Privacy Policy</span></p>
           </label>
-          <button>Send</button>
         </form>
+        <button class="btn">Send</button>
       </div>
       <header>
         <a href="" class="logo"><span class="logo-span">WEB</span>STUDIO</a>
-        <div class="menus">
-          <div class="svg-wrap close-icon">
+        <div id="menu" class="menu">
+          <div class="svg-wrap icon-close">
             <svg width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </div>
-          <div class="is-oopen menus">
-            <div class="menu2 is-oopen menus">
-              <nav class="list-nav">
-                <ul class="flexible">
-                  <li><a class="m-size-title">Studio</a></li>
-                  <li><a class="m-size-title">Portfolio</a></li>
-                  <li><a class="m-size-title">Contacts</a></li>
-                </ul>
-              </nav>
-              <address class="list-address">
-                <ul class="flexible">
-                  <li><a class="address-info">info@devstudio.com</a></li>
-                  <li><a class="address-info">+11 (000) 111-11-11</a></li>
-                </ul>
-              </address>
-            </div>
+
+          <div class="navmenu">
+            <nav>
+              <ul class="flex">
+                <li><a class="title-md links">Studio</a></li>
+                <li><a class="title-md links">Portfolio</a></li>
+                <li><a class="title-md links">Contacts</a></li>
+              </ul>
+            </nav>
+            <address>
+              <ul class="flex">
+                <li><a class="links">info@devstudio.com</a></li>
+                <li><a class="links">+11 (000) 111-11-11</a></li>
+              </ul>
+            </address>
           </div>
 
-          <ul class="S-media flexible">
+          <ul class="flex S-media">
             <li class="svg-wrap">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-instagram"></use>
@@ -132,28 +133,28 @@
             </li>
           </ul>
         </div>
-        <div class="svg-wrap">
+        <div class="svg-wrap icon-group">
           <svg width="18" height="16">
             <use href="./images/icons.svg#icon-Group"></use>
           </svg>
         </div>
       </header>
       <main>
-        <section id="hero" class="dark-bg flexible section">
-          <h1 class="title-margin hero-title">Effective Solutions for Your Business</h1>
-          <button>Order Service</button>
+        <section class="section dark-bg">
+          <h1 class="title-bg">Effective Solutions for Your Business</h1>
+          <button class="btn">Order Service</button>
         </section>
-        <section id="approach" class="flexible section padding-96-16">
-          <ul class="flexible cards">
+        <section id="approach" class="section">
+          <ul class="flex cards">
             <li class="card">
               <div class="svg-wrap">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title m-size-title">Strategy</h3>
-                <p class="card-text">
+              <div class="card-content flex no-padding">
+                <h2 class="title-md special-title">Strategy</h2>
+                <p class="text">
                   Our goal is to identify the business problem to walk away with the perfect and creative solution.
                 </p>
               </div>
@@ -164,9 +165,9 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <div class="card-content flexible">
-                <h3 class="card-title m-size-title">Punctuality</h3>
-                <p class="card-text">
+              <div class="card-content flex no-padding">
+                <h2 class="title-md special-title">Punctuality</h2>
+                <p class="text">
                   Bring the key message to the brand's audience for the best price within the shortest possible time.
                 </p>
               </div>
@@ -177,9 +178,9 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <div class="card-content flexible">
-                <h3 class="card-title m-size-title">Diligence</h3>
-                <p class="card-text">
+              <div class="card-content flex no-padding">
+                <h2 class="title-md special-title">Diligence</h2>
+                <p class="text">
                   Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
                 </p>
               </div>
@@ -190,24 +191,24 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <div class="card-content flexible">
-                <h3 class="card-title m-size-title">Technologies</h3>
-                <p class="card-text">
+              <div class="card-content flex no-padding">
+                <h2 class="title-md special-title">Technologies</h2>
+                <p class="text">
                   Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
                 </p>
               </div>
             </li>
           </ul>
         </section>
-        <section id="team" class="flexible section padding-96-16">
-          <h2 class="m-size-title">Our Team</h2>
-          <ul class="flexible center-t cards">
+        <section id="team" class="section">
+          <h2 class="title-md section-title">Our Team</h2>
+          <ul class="flex cards">
             <li class="card">
-              <div class="img-wrap team-img"><img src="./images/product_designer.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Mark Guerrero</h3>
-                <p class="card-text">Project Designer</p>
-                <ul class="S-media flexible">
+              <div><img src="./images/product_designer.jpg" alt="" class="team-img" /></div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Mark Guerrero</h3>
+                <p>Project Designer</p>
+                <ul class="flex S-media">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -232,11 +233,11 @@
               </div>
             </li>
             <li class="card">
-              <div class="img-wrap team-img"><img src="./images/frontend_dev.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Tom Ford</h3>
-                <p class="card-text">Frontend Developer</p>
-                <ul class="S-media flexible">
+              <div><img src="./images/frontend_dev.jpg" alt="" class="team-img" /></div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Tom Ford</h3>
+                <p>Frontend Developer</p>
+                <ul class="flex S-media">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -261,11 +262,11 @@
               </div>
             </li>
             <li class="card">
-              <div class="img-wrap team-img"><img src="./images/marketing.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Camila Garcia</h3>
-                <p class="card-text">Marketing</p>
-                <ul class="S-media flexible">
+              <div><img src="./images/marketing.jpg" alt="" class="team-img" /></div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Camila Garcia</h3>
+                <p>Marketing</p>
+                <ul class="flex S-media">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -290,11 +291,11 @@
               </div>
             </li>
             <li class="card">
-              <div class="img-wrap team-img"><img src="./images/ui_designer.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Daniel Wilson</h3>
-                <p class="card-text">UI Designer</p>
-                <ul class="S-media flexible">
+              <div><img src="./images/ui_designer.jpg" alt="" class="team-img" /></div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Daniel Wilson</h3>
+                <p>UI Designer</p>
+                <ul class="flex S-media">
                   <li class="svg-wrap">
                     <svg width="16" height="16">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -320,62 +321,114 @@
             </li>
           </ul>
         </section>
-        <section id="portfolio" class="flexible section padding-96-16">
-          <h2 class="m-size-title">Our Portfolio</h2>
-          <ul class="flexible cards">
-            <li class="card">
-              <div class="img-wrap porfolio-img"><img src="./images/banking_app.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Banking App</h3>
-                <p class="card-text">App</p>
+        <section id="portfolio" class="section">
+          <h2 class="title-md section-title">Our Portfolio</h2>
+          <ul class="flex cards">
+            <li>
+              <div class="imgg">
+                <div><img src="./images/banking_app.jpg" alt="" class="portfolio-img" /></div>
+                <div class="overlay">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                    Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Banking App</h3>
+                <p>App</p>
               </div>
             </li>
-            <li class="card">
-              <div class="img-wrap porfolio-img"><img src="./images/cashless_payment.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Cashless Payment</h3>
-                <p class="card-text">Marketing</p>
+            <li>
+              <div class="imgg">
+                <div><img src="./images/cashless_payment.jpg" alt="" class="portfolio-img" /></div>
+                <div class="overlay">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                    Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Cashless Payment</h3>
+                <p>Marketing</p>
               </div>
             </li>
-            <li class="card">
-              <div class="img-wrap porfolio-img"><img src="./images/meditation_app.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Meditation App</h3>
-                <p class="card-text">App</p>
+            <li>
+              <div class="imgg">
+                <div><img src="./images/meditation_app.jpg" class="portfolio-img" alt="" /></div>
+                <div class="overlay">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                    Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Meditation App</h3>
+                <p>App</p>
               </div>
             </li>
-            <li class="card">
-              <div class="img-wrap porfolio-img"><img src="./images/taxi_service.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Taxi Service</h3>
-                <p class="card-text">Marketing</p>
+            <li>
+              <div class="imgg">
+                <div><img src="./images/taxi_service.jpg" alt="" class="portfolio-img" /></div>
+                <div class="overlay">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                    Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Taxi Service</h3>
+                <p>Marketing</p>
               </div>
             </li>
-            <li class="card">
-              <div class="img-wrap porfolio-img"><img src="./images/screen_illustrations.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Screen Illustraion</h3>
-                <p class="card-text">Design</p>
+            <li>
+              <div class="imgg">
+                <div><img src="./images/screen_illustrations.jpg" alt="" class="portfolio-img" /></div>
+                <div class="overlay">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                    Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Screen Illustraion</h3>
+                <p>Design</p>
               </div>
             </li>
-            <li class="card">
-              <div class="img-wrap porfolio-img"><img src="./images/online_courses.jpg" alt="" /></div>
-              <div class="card-content flexible">
-                <h3 class="title-color card-title">Online Courses</h3>
+            <li>
+              <div class="imgg">
+                <div><img src="./images/online_courses.jpg" alt="" class="portfolio-img" /></div>
+                <div class="overlay">
+                  <p>
+                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
+                    Fruit Ecommerce App · Cloud Storage App
+                  </p>
+                </div>
+              </div>
+              <div class="card-content flex">
+                <h3 class="title-sm">Online Courses</h3>
                 <p>Marketing</p>
               </div>
             </li>
           </ul>
         </section>
       </main>
-      <footer id="foot" class="dark-bg flexible padding-96-16">
-        <div id="foot-text" class="foot-gap">
+      <footer class="dark-bg">
+        <div class="info-f">
           <a href="" class="logo"><span class="logo-span">WEB</span>STUDIO</a>
-          <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+          <p class="foot-text">
+            Increase the flow of customers and <br />
+            sales for your business with digital <br />
+            marketing & growth solutions.
+          </p>
         </div>
-        <div class="foot-gap">
-          <h3>Social Media</h3>
-          <ul class="S-media flexible foot-gap">
+        <div>
+          <h3 class="title-sm">Social Media</h3>
+          <ul class="flex S-media">
             <li class="svg-wrap">
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
@@ -398,14 +451,12 @@
             </li>
           </ul>
         </div>
-        <div class="foot-gap">
-          <h3>Subscibe</h3>
-          <div class="foot-gap">
-            <div class="inp">
-              <input type="text" placeholder="E-mail" />
-            </div>
+        <div class="Sub-inp">
+          <h3 class="title-sm">Subscibe</h3>
+          <div class="inp-but-wrap">
+            <input class="in-area-f" type="text" placeholder="E-mail" />
 
-            <button>
+            <button class="btn">
               <span>Subscribe</span>
               <div class="svg-wrap">
                 <svg width="24" height="20">
