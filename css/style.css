@@ -38,7 +38,7 @@ body {
   letter-spacing: 0.02em;
 }
 .section:first-of-type {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_image.jpg");
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_image-1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -432,7 +432,7 @@ footer .btn {
 footer .S-media .svg-wrap:hover {
   background-color: #31d0aa;
 }
-#team .card :hover .S-media .svg-wrap {
+#team .card:hover .S-media .svg-wrap {
   background-color: #404bbf;
 }
 .links:hover,
@@ -708,5 +708,10 @@ nav .links {
   .dark-bg:last-of-type {
     padding: 100px 193px;
     justify-content: space-between;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .section:first-of-type {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero_image-1x.jpg");
   }
 }
